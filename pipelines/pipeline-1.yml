@@ -1,0 +1,10 @@
+## This is the Basic Pipeline for Knowbly and the websocket app
+
+## First get the master repo
+
+resources:
+- name: socketApp-repo
+  type: git
+  source:
+    uri: https://github.com/skypeter1/socketapp.git
+    branch: master
