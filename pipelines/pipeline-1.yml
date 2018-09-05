@@ -1,10 +1,39 @@
 ## This is the Basic Pipeline for Knowbly and the websocket app
 
-## First get the master repo
+## Deployement Jobs
 
+jobs:
+  name: deploy-sockets
+  plan:
+    - get: git
+      resource: socket-production
+      trigger: true
+    - task: 
+      config:
+        platform: linux
+
+    - put: deploy-production
+      params:
+        manifest: manifest.yml    
+
+
+## List of resources to set up deployement jobs
 resources:
-- name: socketApp-repo
+
+## First get the master repo
+- name: socket-production
   type: git
   source:
     uri: https://github.com/skypeter1/socketapp.git
     branch: master
+
+## Setup CF credentials and targets
+- name: deploy-production
+  type: cf
+  source:
+    api:             https://api.run.pivotal.io
+    skip_cert_check: false
+    username:        peter.arboleda@knowbly.com
+    password:        Vuduman@.1
+    organization:    Knowbly Learning Systems, Inc.
+    space:           development    

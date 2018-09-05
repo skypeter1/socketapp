@@ -1,0 +1,20 @@
+spruce:
+- base: factory/app-stub.yml
+  prune:
+  - meta
+  for_each:
+    in: apps/
+    regexp: ".*.(yml)"
+  modify:
+    delete:
+    - "jobs.name:not-defined"
+  to_dir: {{temp/}}
+- base: factory/pipeline-stub.yml
+  merge:
+  - with_in: {{temp/}}
+  to: pipeline.yml
+
+fly:
+  target: $target
+  name: $name
+  config: pipeline.yml

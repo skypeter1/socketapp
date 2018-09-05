@@ -4,8 +4,3 @@ applications:
   memory: 768M
   instances: 1
   random-route: true
-#  command: node app.js
-
-#  properties:
-#    logger_endpoint:
-#      port: 4443  
