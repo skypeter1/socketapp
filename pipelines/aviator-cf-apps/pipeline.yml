@@ -11,6 +11,37 @@ resources:
 - name: socketapp
   source:
     branch: master
+    private_key: |
+      -----BEGIN PRIVATE KEY-----
+      Proc-Type: 4,ENCRYPTED
+      DEK-Info: AES-128-CBC,C8812A9191DB5F43E23566AE2B961520
+
+      uRxibMhnCIhk2/1Xep8WS9YJsHimCuzooPnQW8lApf1bpjDGXImdWFg8A1Uyjkqv
+      NAZ9+g2sNjhDFArSDPb+imCbZFvEHn+K93ppGOZ0Ymhad3INFlLPGG8QtzUXGU8q
+      XnPlfPZpfK8WZuxAuqtAlalSn8EnIR0Pfnr4bc0zHvMFqwPe1pKqtNFbfrkearLC
+      8eI9jkTTz1REmMWwE/ywxSBqAsaCVHXMqpm72WiIAYgqX0fjVjBSInf3r410c5IQ
+      LsZG0W4F/G9YwTa7jW7DHX7uZl5VRjjhWIrUF2k6tPCIyWbZTOc1mILuNsgUuMIL
+      qb+rEx+kT0cYwEgmVEQHqklrsSmUWjzTfmNFDdDD4gHZmvCHJoMaZmdc4YsNEt8g
+      JZuXmdqHTfxqvmyKOBJyxY+4TPuykiGzsOpfcm5yyDV1UuCV07qznFl6/if1Royr
+      bQs21YWrE5/2J/b6iUniKitReryvQo+WHXNzqKHXf9SpwMgeJi6RVUgSXLRNT6Us
+      2rnsYzIoFpp8cSP2SXHa+AcKJ2BXW0hbbPHWCVpn73PqWYiAWTqON3/X2wxnsXAS
+      7vgxTEt+yyMxpBCjSsytsiIvmZxIZaN3XjXF4pF3u/LfP3ZGIsQNKQYTTQuujeYz
+      vZEtTE9dPCruxydzcsCCqdNPBHrn/tb0lm+5JEYLWgglSlTgZV0zsgMT1hDXCAjd
+      kXN2zukgA7p7jWHkJRh9JQ61RzdGRDgDqI39ZHFxrXKZzTPQBAiTBCfzgVf5NIuW
+      9EfcWokwbNklhnkA5rIFt7m3ocFKBmSclRU1OrVtI5t+sB2xFjAn04fP0hVcxuvA
+      fWeGPlJcpnlXIvJaT+QXC0tORxAc2mjH8CqbHu0f42oru46Ba/U6CYZeIzBmsGPb
+      7BbWcbQhFWB074cbJyh5RxiJOcVj6O7zyMb8P0lJF2o3U7603fizN5iP3Kc4BUMO
+      ztsR9t/e4CQbLI/PkqJ2JiAdYjpcj7jvb4369MJs1YiFyPrOYQtxZ7ray1psFLTC
+      vEhdJOrPzqHML1a79zShvPITRdNMsC+tMt7WSMcicJu+1M4fSW3uzDzlWq16O7JX
+      yBiWFcvs/M2ApZwHKax7wbxh2OU/0b7EYuyUCpJJ8tV9SJ2nuJXOrtsUdykMoc+F
+      qp/lRxR9urj76yAjNK7KaDvVPiYGGqUTkuKUZFNaFJOYnWafJD7+PyrKTTIfhg9B
+      21hopgULNwrNJVqfKXU+6w8sngud9JoGCdPYE1GII8o6G5y3zLp9mFNmBBAMx6I7
+      BQ0kuU4HIXlV2UxI9DHlQemRrD4XfnB+MCcpzrTCFkWdRgu+KnIxzLKkfItTz4S3
+      4ivoQ4E4TmcoGz7ePswTDu+oCtOL/zKSdgDph8h2i+488BYDz5dCUKckTNKsocz5
+      NHH+fje1njnG1uIL0jVTq8byrgkCPpEQq9HOHXowxANieblq114YyzvHLwNfNorP
+      iB0w/1jq/hIo8TXeehp5P9AL85FkpUT/NlQznwJwj9BKJXl1x2+FFmUJyOvaOJod
+      wmOmfhRYxQqGVD2oEuFazwg2ZkwmO2MtjWCz94BEFbQM2Sv/UmhsALYtNMKM0OOu
+      -----END PRIVATE KEY-----
     uri: git@github.com:skypeter1/socketapp.git
   type: git
 - name: cf-push-socketapp
