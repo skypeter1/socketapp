@@ -4,5 +4,4 @@ applications:
   memory: 768M
   instances: 1
   random-route: true
-  buildpacks:
-    - https://github.com/cloudfoundry/nodejs-buildpack.git
+  buildpack: nodejs_buildpack
