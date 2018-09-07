@@ -7,7 +7,7 @@ jobs:
   - put: cf-push-socketapp  
     params:
       manifest: socketapp/manifest.yml
-      # path: myapp
+      path: socketapp
   #   put: cf-push-socketapp
 resources:
 # - name: socketapp
