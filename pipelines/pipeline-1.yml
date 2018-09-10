@@ -11,7 +11,6 @@ jobs:
     - task: 
       config:
         platform: linux
-
     - put: deploy-production
       params:
         manifest: manifest.yml    
