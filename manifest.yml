@@ -1,9 +1,10 @@
 ---
 applications:
 - name: socketapp
+  current_name: socketapp
   memory: 768M
   instances: 1
-  stack: cflinuxfs2
+  stack: cflinuxfs3
   random-route: true
   command: node app.js
   buildpack: nodejs_buildpack
