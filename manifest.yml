@@ -6,6 +6,5 @@ applications:
   instances: 1
   stack: cflinuxfs3
   route: https://socketapp.cfapps.io
-  # random-route: true
   command: node app.js
   buildpack: nodejs_buildpack
